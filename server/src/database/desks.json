@@ -49,5 +49,18 @@
       }
     ],
     "id": 3
+  },
+  {
+    "name": "Мои задачи",
+    "userId": 7,
+    "tasksList": [
+      {
+        "name": "Собрать информацию о стажировке",
+        "description": "",
+        "isCompleted": false,
+        "id": 1
+      }
+    ],
+    "id": 4
   }
 ]

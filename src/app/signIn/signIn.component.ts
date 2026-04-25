@@ -26,6 +26,7 @@ export class SignInComponent {
     this.router.navigate(['signUp']);
   }
 
+  //Берём данную функцию для оценки
   signInApplication() {
     if (this.signInForm.invalid) {
       // Помечаем все поля как touched для отображения ошибок

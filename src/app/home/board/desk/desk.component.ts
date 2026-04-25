@@ -52,6 +52,7 @@ export class deskComponent {
     this.editedName = '';
   }
 
+  //Берём данную функцию для оценки
   deleteDesk() {
     if (confirm('Вы уверены, что хотите удалить эту доску? Все задачи также будут удалены.')) {
       this.boardService.deleteDesk(this.desk.id).subscribe({
@@ -88,6 +89,7 @@ export class deskComponent {
     }
   }
 
+  //Берём данную функцию для оценки 
   onTaskUpdated(updatedTask: Task): void {
     // Обновляем задачу в локальном списке
     const index = this.desk.tasksList.findIndex(t => t.id === updatedTask.id);

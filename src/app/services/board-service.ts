@@ -86,6 +86,7 @@ export class BoardService {
     return throwError(() => new Error(error.message || 'Server error'));
   }
 
+  
   getDesksList(): Observable<Desk[]> {
     console.log('Fetching desks from:', `${this.baseUrl}/desks`);
     console.log('Auth token available:', !!this.authService.getToken());
